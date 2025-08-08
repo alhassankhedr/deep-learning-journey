@@ -1,30 +1,26 @@
-# Chapter 5: The mechanics of learning
+# Chapter 5: The Mechanics of Learning
 
 ## Key Concepts Learned
 
-- Backpropagation implementation from scratch
-- Different activation functions and when to use them
-- Weight initialization strategies
+- PyTorch's autograd system and computational graphs
+- Parameter updates and gradient descent mechanics
+- Optimizers: SGD, Adam
+- Learning rate
+- How PyTorch tracks operations for backpropagation
 
 ## Implementations
 
-- [✓] Basic MLP from scratch
-- [✓] Book's CNN example
-- [✓] My extension: Added dropout and batch normalization
+- [✓] Manual gradient descent implementation (no optimizer)
+- [✓] Custom optimizer from scratch mimicking SGD
+- [✓] Comparison of different PyTorch optimizers
 
-## Experiments & Findings
+## Key Takeaways
 
-1. **Learning Rate Sensitivity**: Compared SGD with different LRs on MNIST
-
-   - Finding: LR=0.01 worked best for this architecture
-   - [See notebook](experiments/lr-analysis.ipynb)
-
-2. **Custom Dataset**: Applied the concepts to [specific dataset]
-   - Modified architecture because...
-   - Achieved X% accuracy
+- Understanding `loss.backward()` and what happens under the hood
+- When to use `model.eval()` vs `torch.no_grad()`
+- Why we need `optimizer.zero_grad()`
+- The importance of the learning rate
 
 ## Resources & References
 
-- Book: Chapter 3, pages 45-78
-- Additional reading: [Original batch norm paper](link)
-- My blog post explaining the concepts: [link]
+- Book: Chapter 5,
